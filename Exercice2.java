@@ -14,17 +14,17 @@ public class Exercice2 {
             boolean isMultipleOf3 = i % 3 == 0;
             boolean isMultipleOf5 = i % 5 == 0;
 
+            //si c'est multiple de 3 et de 5
+            if (isMultipleOf3 && isMultipleOf5) {
+                System.out.println("ChausettesSales");
+            }
             //si c'est multiple de 3
-            if (isMultipleOf3) {
+            else if (isMultipleOf3) {
                 System.out.println("Chausettes");
             }
             //si c'est multiple de 5
             else if (isMultipleOf5) {
                 System.out.println("Sales");
-            }
-            //si c'est multiple de 3 et de 5
-            else if (isMultipleOf3 && isMultipleOf5) {
-                System.out.println("ChausettesSales");
             }
             else {
                 System.out.println(i);
